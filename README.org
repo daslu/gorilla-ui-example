@@ -1,2 +1,5 @@
-* shadow-cjs-template
-A simple template for my shadow-cljs experiments
+* gorilla-ui example
+
+A small example project using [gorilla-ui](https://github.com/pink-gorilla/gorilla-ui).
+
+Built using [shadow-cljs-template](https://github.com/zamansky/shadow-cljs-template).

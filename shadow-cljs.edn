@@ -2,20 +2,30 @@
 {:source-paths
  ["src"]
 
+ :resource-paths  ["resources"
+                   "node_modules/leaflet/dist"
+                   "node_modules/mathjax/es5"
+                   "node_modules/ag-grid-community"]
+
  :dependencies
- [[reagent "0.8.1"]
+ [[reagent "0.10.0"]
   [org.clojure/core.async "0.4.500"]
   [com.taoensso/timbre "4.10.0"]
-  ]
+  [org.pinkgorilla/gorilla-ui "0.1.34"]]
 
- :dev-http {8080 "target/"}
+ :dev-http {8080 ["target"
+                  "classpath:resources"
+                  "classpath:resources/public"
+                  "resources/public"
+                  "node_modules"
+                  "node_modules/leaflet/dist"
+                  "node_modules/mathjax/es5"
+                  "node_modules/ag-grid-community"]}
  :builds {:app {:output-dir "target/"
                 :asset-path "."
-                :target :browser
-                :modules {:main {:init-fn main/main!}}
-                :devtools {:after-load main/reload!
-                           :http-root "target"
-                           :http-port 8080}}}
-
-
- }
+                :target     :browser
+                :modules    {:main {:init-fn gorilla-ui-example.main/main!}}
+                :devtools   {:after-load gorilla-ui-example.main/reload!
+                             :http-root "target"
+                             :http-port 8080}
+                :compiler-options {:optimizations :simple}}}}
