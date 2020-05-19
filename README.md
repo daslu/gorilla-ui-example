@@ -2,7 +2,7 @@
 
 A small example project using [gorilla-ui](https://github.com/pink-gorilla/gorilla-ui).
 
-Built using [shadow-cljs-template](https://github.com/zamansky/shadow-cljs-template). See this [related tutorial](https://www.youtube.com/watch?v=BZNJi5pP8fU).
+Originally built using [shadow-cljs-template](https://github.com/zamansky/shadow-cljs-template), but updated to a more recent version of Reagent. See this [related tutorial](https://www.youtube.com/watch?v=BZNJi5pP8fU).
 
 ## Usage
 
