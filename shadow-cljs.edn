@@ -9,7 +9,6 @@
 
  :dependencies
  [[reagent "0.10.0"]
-  [org.clojure/core.async "0.4.500"]
   [com.taoensso/timbre "4.10.0"]
   [org.pinkgorilla/gorilla-ui "0.1.34"]]
 
